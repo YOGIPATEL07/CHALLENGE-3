@@ -1,0 +1,101 @@
+/* General Reset */
+/* This section resets the default margin, padding, and box-sizing for all elements */
+* {
+    margin: 0;
+    padding: 0;
+}
+/* Typography */
+/* This section defines the font styles and sizes for various elements */
+
+body {
+    font-family: 'Shantell Sans', cursive;
+    font-size: 1.125rem;
+    line-height: 1.6;
+}
+/* Headings */
+/* All headings (h1 to h6) will use the 'Rampart One' cursive font */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Rampart One', cursive;
+}
+/* Style for h1 */
+h1 {
+    font-size: 3rem;
+    display: flex;
+    align-items: center;
+}
+/* Center align paragraphs containing anchor tags */
+p:has(> a) {
+    text-align: center;
+}
+/* Layout & Appearance */
+/* Styling for the header */
+header {
+    height: 15vw;
+    background-color:#FF8360;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+}
+/* Styling for the main content wrapper */
+.main-wrapper {
+    width: 80vw;
+    margin: 0 auto;
+    border: 2px solid #999;
+    padding: 1em;
+}
+/* Styling for main section containers */
+main>section{
+    display: flex;
+    margin-top: 25px;
+}
+section:nth-child(2){
+    margin-top: 25px;
+}
+section:nth-child(2) > p, p:nth-child(2){
+    margin-right: 15px;
+}
+main section > div + p {
+    background-color: #3CDBD3;
+    padding: 1em;
+}
+/* Styling for the second section */
+main section:nth-of-type(2) p {
+    background-color: #E8E288;
+    padding: 1em;
+}
+/* Styling for the footer */
+footer{
+    margin-top: 25px;
+    display: flex;
+}
+/* Styling for footer paragraphs and anchor tags */
+footer p, footer a {
+    background-color:#7DCE82;
+    color: #fff;
+    padding: 2em;
+    border: 2px solid #fff;
+}
+/* Styling for footer paragraphs */
+footer p {
+    text-align:center;
+    order: 2;
+    flex-grow: 1;
+    margin-right: 0;
+}
+/* Styling for the first paragraph in the footer */
+footer p:first-child{
+    order:3;
+    flex-grow: 2;
+}
+/* Styling for the second paragraph in the footer */
+footer p:nth-child(2){
+    margin-right:0px ;
+}
+/* Styling for footer anchor tags */
+footer a {
+    background-color:#FF8360;
+}
+/* Styling for hover effect on footer anchor tags */
+footer a:hover {
+    background-color: #9C528B;
+}
